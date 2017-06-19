@@ -7,19 +7,15 @@
  */
 import angular from 'angular';
 import * as bedrock from 'bedrock-angular';
-import myComponent from './my-component.js';
 
-
-var module = angular.module('my-module-name', ['bedrock.modal']);
+var module = angular.module('test1-module', ['bedrock.modal']);
 
 bedrock.setRootModule(module);
-
-module.component('brMyComponent', myComponent);
 
 /* @ngInject */
 module.config(function($routeProvider) {
   $routeProvider.when('/', {
     title: 'Joel Test One',
-    templateUrl: 'my-package-name/some.html' // this does not display, tried various variations
+    templateUrl: 'test1-package/some.html' // this does not display, tried various variations
   });
 });
