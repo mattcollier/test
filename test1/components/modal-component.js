@@ -1,5 +1,6 @@
 export default {
-  controller: Ctrl
+  controller: Ctrl,
+  templateUrl: 'test1-package/some.html'
 };
 
 /* @ngInject */

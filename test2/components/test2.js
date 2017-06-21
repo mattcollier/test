@@ -7,18 +7,16 @@
  */
 import angular from 'angular';
 import * as bedrock from 'bedrock-angular';
-// import ModalComponent from './modal-component.js';
 
-var module = angular.module('test1-module', ['']);
+var module = angular.module('test2-module', []); // content displays
+// var module = angular.module('test2-module', ['bedrock.modal']); // content is blank
 
 bedrock.setRootModule(module);
-
-// module.component('brModalComp',ModalComponent);
 
 /* @ngInject */
 module.config(function($routeProvider) {
   $routeProvider.when('/', {
-    title: 'Joel Test One',
-    template: '<p>hello there</p>'
+    title: 'Joel Test Two',
+    template: '<p>hello there- test 2</p>'
   });
 });
