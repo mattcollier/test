@@ -7,10 +7,13 @@
  */
 import angular from 'angular';
 import * as bedrock from 'bedrock-angular';
+import ModalComponent from './modal-component.js';
 
 var module = angular.module('test1-module', ['bedrock.modal']);
 
 bedrock.setRootModule(module);
+
+module.component('brModalComp',ModalComponent);
 
 /* @ngInject */
 module.config(function($routeProvider) {
