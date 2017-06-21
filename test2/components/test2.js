@@ -8,8 +8,8 @@
 import angular from 'angular';
 import * as bedrock from 'bedrock-angular';
 
-var module = angular.module('test2-module', []); // content displays
-// var module = angular.module('test2-module', ['bedrock.modal']); // content is blank
+// var module = angular.module('test2-module', []); // content displays
+var module = angular.module('test2-module', ['bedrock.modal']); // content is blank
 
 bedrock.setRootModule(module);
 

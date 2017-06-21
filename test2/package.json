@@ -19,7 +19,8 @@
   },
   "bedrock": {
     "browserDependencies": [
-      "bedrock-angular"
+      "bedrock-angular",
+      "bedrock-angular-modal"
     ]
   },
   "engines": {
